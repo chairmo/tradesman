@@ -32,6 +32,15 @@ angular.module('Artisans').controller('ArtisanController', [
                 });
         };
 
+        $scope.updateArtisan = function () {
+            ArtisanService.updateById($routeParams.artisanId, $scope.artisan)
+                .then(function (response) {
+                    alert("Successfully updated Artisan");
+                }, function (data) {
+                    alert("Failed to Update Artisan");
+                });
+        };
+
         $scope.filterArtisans = function () {
             $scope.filteredTeachers = $filter('filter')($scope.artisans, $scope.search);
         };
