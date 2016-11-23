@@ -1,6 +1,6 @@
 angular.module('Artisans').controller('ArtisanController', [
-    '$scope', '$filter', 'ArtisanService',
-    function ($scope, $filter, ArtisanService) {
+    '$scope', '$filter', '$routeParams', 'ArtisanService',
+    function ($scope, $filter, $routeParams, ArtisanService) {
 
         $scope.createArtisan = function () {
             ArtisanService.create($scope.artisan)
@@ -20,6 +20,15 @@ angular.module('Artisans').controller('ArtisanController', [
                     $scope.filterArtisans();
                 }, function (data) {
                     alert("Failed to find Artisans");
+                });
+        };
+
+        $scope.getArtisanById = function () {
+            ArtisanService.getById($routeParams.artisanId)
+                .then(function (response) {
+                    $scope.artisan = response.data;
+                }, function (data) {
+                    alert("Failed to find Artisan");
                 });
         };
 

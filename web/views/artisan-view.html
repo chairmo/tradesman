@@ -1,0 +1,86 @@
+﻿<header class="artisans-header" ng-init="getArtisanById()">
+    <div class="artisans-header-brand">
+        <a href="/">
+            <img class="artisans-logo" src="/img/logo.png" />
+        </a>
+    </div>
+    <nav class="artisans-navigation">
+        <ul class="artisans-menu-left">
+            <li>
+                <a href="/artisans">Artisans</a>
+            </li>
+        </ul>
+        <ul class="artisans-menu-right">
+            <li>
+                <a href="#">Messages</a>
+            </li>
+            <li>
+                <a href="settings/profile">
+                    <img src="https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/13118990_10208602647238138_2898330164395268429_n.jpg?oh=73cd7e4bf5a1965deef3580c1dd1d234&oe=58623DCB"
+                        width="40" />
+                    <span>MaziMuhlari</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="artisans-main-content">
+    <div style="margin-top:70px;">
+        <div class="container">
+            <form class="artisans-form" ng-submit="createArtisan()">
+                <div class="artisans-form-header">
+                    <h4>Create Artisan</h4>
+                </div>
+                <div class="artisans-form-body">
+                    <div class="row">
+                        <div class="six columns">
+                            <label>Name</label>
+                            <input class="u-full-width" type="text" placeholder="Name" ng-model="artisan.name" required="required" disabled="disabled" />
+                        </div>
+                        <div class="six columns">
+                            <label>Surname</label>
+                            <input class="u-full-width" type="text" placeholder="Surname" ng-model="artisan.surname" required="required" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <label>Company</label>
+                            <input class="u-full-width" type="text" placeholder="Company" ng-model="artisan.company" required="required" disabled="disabled" />
+                        </div>
+                        <div class="six columns">
+                            <label>Location</label>
+                            <input class="u-full-width" type="text" placeholder="Location" ng-model="artisan.location" required="required" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <label>Cell</label>
+                            <input class="u-full-width" type="tel" placeholder="Cell" ng-model="artisan.cell" required="required" disabled="disabled" />
+                        </div>
+                        <div class="six columns">
+                            <label>Email</label>
+                            <input class="u-full-width" type="email" placeholder="Email" ng-model="artisan.email" required="required" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <label>Experience</label>
+                            <input class="u-full-width" type="number" placeholder="Experience" ng-model="artisan.experience" required="required" disabled="disabled" />
+                        </div>
+                        <div class="six columns">
+                            <label>Capacity</label>
+                            <input class="u-full-width" type="number" placeholder="Capacity" ng-model="artisan.capacity" required="required" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <label>Skill</label>
+                            <textarea class="u-full-width" rows="5" placeholder="Describe your skills" ng-model="artisan.skill" required="required" disabled="disabled"></textarea>
+                        </div>
+                    </div>
+                    <input class="button-primary" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

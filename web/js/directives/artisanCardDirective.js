@@ -8,7 +8,7 @@ angular.module('Artisans').directive('artisanCard', function ($templateCache, $c
             cardsHtml +=
                 '<div class="four columns">' +
                     '<div class="artisans-business-card">' +
-                        '<a href="#">' +
+                        '<a href="/artisan/view/{{artisanList[' + current +']._id}}">' +
                             '<h5>{{artisanList[' + current +'].company}}</h5>' +
                             '<h6>{{artisanList[' + current +'].name}} {{artisanList[' + current +'].surname}}</h6>' +
                             '<div class="artisans-image">' +
@@ -51,7 +51,7 @@ angular.module('Artisans').directive('artisanCard', function ($templateCache, $c
         for (var i = 0; i < value.length; i += 3) {
             template +=
                 '<div class="row">' +
-                createCardsHtml(i, 3) +
+                    createCardsHtml(i, 3) +
                 '</div>';
         }
 
