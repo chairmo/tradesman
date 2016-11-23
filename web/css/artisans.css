@@ -22,9 +22,11 @@
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       padding: 10px;
-      font-size: 18px; }
+      font-size: 18px;
+      height: 47px; }
     .artisans-business-card a h6 {
-      color: gray; }
+      color: gray;
+      height: 24px; }
     .artisans-business-card a .artisans-image {
       height: 120px;
       padding: 10px; }
