@@ -8,7 +8,7 @@ angular.module('Artisans').directive('artisanCard', function ($templateCache, $c
             cardsHtml +=
                 '<div class="four columns">' +
                     '<div class="artisans-business-card">' +
-                        '<a href="/artisan/view/{{artisanList[' + current +']._id}}">' +
+                        '<a href="/artisan/{{artisanList[' + current +']._id}}">' +
                             '<h5>{{artisanList[' + current +'].company}}</h5>' +
                             '<h6>{{artisanList[' + current +'].name}} {{artisanList[' + current +'].surname}}</h6>' +
                             '<div class="artisans-image">' +

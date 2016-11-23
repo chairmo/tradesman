@@ -52,7 +52,7 @@ Artisans.config(function ($routeProvider, $locationProvider, $httpProvider) {
             controller: 'ArtisanController',
             access: { restricted: false }
         })
-        .when('/artisan/view/:artisanId', {
+        .when('/artisan/:artisanId', {
             templateUrl: 'views/artisan-view.html',
             controller: 'ArtisanController',
             access: { restricted: false }
