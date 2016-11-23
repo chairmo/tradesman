@@ -4,6 +4,7 @@ module.exports = mongoose.model('Artisan', new mongoose.Schema({
     name: { type: String, default: '' },
     surname: { type: String, default: '' },
     company: { type: String, default: '' },
+    location: { type: String, default: '' },
     cell: { type: String, default: '' },
     email: { type: String, default: '' },
     experience: { type: Number, default: 0 },
