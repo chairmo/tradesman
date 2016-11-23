@@ -32,7 +32,8 @@
         height: inherit; }
     .artisans-business-card a p {
       padding: 10px;
-      margin: 10px; }
+      margin: 10px;
+      min-height: 150px; }
   .artisans-business-card .artisans-controls {
     padding: 5px;
     background: #122a38;

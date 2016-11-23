@@ -29,44 +29,16 @@
         <div class="container">
             <div class="row">
                 <div class="nine columns">
-                    <input type="search" class="u-full-width" placeholder="search for an artisan by typing here..." ng-model="search" />
+                    <input type="search" class="u-full-width" placeholder="search for an artisan by typing here..." ng-model="search" ng-change="filterArtisans()"
+                    />
                 </div>
                 <div class="three columns">
                     <a href="/artisan/create" class="button button-primary u-full-width">Create Artisan</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="twelve columns" ng-repeat="artisan in artisans | filter: search">
-                    <div class="artisans-business-card">
-                        <a href="#">
-                            <h5>{{artisan.company}}</h5>
-                            <h6>{{artisan.name}} {{artisan.surname}}</h6>
-                            <div class="artisans-image">
-                                <img src="/img/logo.png" />
-                            </div>
-                            <p>
-                                {{artisan.skill}}
-                                <br />
-                                <strong>Cell: </strong>{{artisan.cell}}<br />
-                                <strong>Email: </strong>{{artisan.email}}
-                            </p>
-                        </a>
-                        <div class="artisans-controls">
-                            <div class="row">
-                                <div class="four columns">
-                                    {{artisan.experience}}
-                                </div>
-                                <div class="four columns">
-                                    {{artisan.location}}
-                                </div>
-                                <div class="four columns">
-                                    {{artisan.capacity}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <artisan-card artisan-list="filteredTeachers"></artisan-card>
+
         </div>
     </div>
 </div>

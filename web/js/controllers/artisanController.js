@@ -1,6 +1,6 @@
 angular.module('Artisans').controller('ArtisanController', [
-    '$scope', 'ArtisanService',
-    function ($scope, ArtisanService) {
+    '$scope', '$filter', 'ArtisanService',
+    function ($scope, $filter, ArtisanService) {
 
         $scope.createArtisan = function () {
             ArtisanService.create($scope.artisan)
@@ -17,9 +17,14 @@ angular.module('Artisans').controller('ArtisanController', [
             ArtisanService.getAll()
                 .then(function (response) {
                     $scope.artisans = response.data;
+                    $scope.filterArtisans();
                 }, function (data) {
                     alert("Failed to find Artisans");
                 });
+        };
+
+        $scope.filterArtisans = function () {
+            $scope.filteredTeachers = $filter('filter')($scope.artisans, $scope.search);
         };
 
     }]);
