@@ -29,7 +29,7 @@
         <div class="container">
             <form class="artisans-form" ng-submit="updateArtisan()">
                 <div class="artisans-form-header">
-                    <h4>Create Artisan</h4>
+                    <h4>Update Artisan</h4>
                 </div>
                 <div class="artisans-form-body">
                     <div class="row">
@@ -65,11 +65,11 @@
                     <div class="row">
                         <div class="six columns">
                             <label>Experience (Years)</label>
-                            <input class="u-full-width" type="number" placeholder="Experience" ng-model="artisan.experience" required />
+                            <input class="u-full-width" type="number" placeholder="Experience" ng-model="artisan.experience" ng-minlength="0" required />
                         </div>
                         <div class="six columns">
                             <label>Capacity (Workers)</label>
-                            <input class="u-full-width" type="number" placeholder="Capacity" ng-model="artisan.capacity" required />
+                            <input class="u-full-width" type="number" placeholder="Capacity" ng-model="artisan.capacity" ng-minlength="0" required />
                         </div>
                     </div>
                     <div class="row">
