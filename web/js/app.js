@@ -13,57 +13,62 @@ Artisans.config(function ($routeProvider, $locationProvider, $httpProvider) {
 
     $routeProvider
         .when('/', {
-            templateUrl: 'SPA/Views/Home.html',
+            templateUrl: 'views/home.html',
             controller: 'HomeController',
             access: { restricted: false }
         })
         .when('/login', {
-            templateUrl: 'SPA/Views/Login.html',
+            templateUrl: 'views/login.html',
             controller: 'LoginController',
             access: { restricted: false }
         })
         .when('/register', {
-            templateUrl: 'SPA/Views/Register.html',
+            templateUrl: 'views/register.html',
             controller: 'RegisterController',
             access: { restricted: false }
         })
         .when('/forgot-password', {
-            templateUrl: 'SPA/Views/ForgotPassword.html',
+            templateUrl: 'views/forgot-password.html',
             controller: 'ForgotPasswordController',
             access: { restricted: false }
         })
         .when('/about', {
-            templateUrl: 'SPA/Views/About.html',
+            templateUrl: 'views/about.html',
             controller: 'AboutController',
             access: { restricted: false }
         })
         .when('/feed', {
-            templateUrl: 'SPA/Views/Feed.html',
+            templateUrl: 'views/feed.html',
             controller: 'FeedController',
             access: { restricted: true }
         })
+        .when('/artisans', {
+            templateUrl: 'views/artisan-list.html',
+            controller: 'ArtisanController',
+            access: { restricted: false }
+        })
         .when('/businesses', {
-            templateUrl: 'SPA/Views/BusinessList.html',
+            templateUrl: 'views/business-list.html',
             controller: 'BusinessController',
             access: { restricted: true }
         })
         .when('/entrepreneurs', {
-            templateUrl: 'SPA/Views/EntrepreneurList.html',
+            templateUrl: 'views/entrepreneur-list.html',
             controller: 'EntrepreneurController',
             access: { restricted: true }
         })
         .when('/investors', {
-            templateUrl: 'SPA/Views/InvestorList.html',
+            templateUrl: 'views/investor-list.html',
             controller: 'InvestorController',
             access: { restricted: true }
         })
         .when('/events', {
-            templateUrl: 'SPA/Views/EventList.html',
+            templateUrl: 'views/event-list.html',
             controller: 'EventController',
             access: { restricted: true }
         })
         .when('/settings/profile', {
-            templateUrl: 'SPA/Views/SettingsProfile.html',
+            templateUrl: 'views/settings-profile.html',
             controller: 'ProfileController',
             access: { restricted: true }
         });
