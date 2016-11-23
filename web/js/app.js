@@ -47,6 +47,11 @@ Artisans.config(function ($routeProvider, $locationProvider, $httpProvider) {
             controller: 'ArtisanController',
             access: { restricted: false }
         })
+        .when('/artisan/create', {
+            templateUrl: 'views/artisan-create.html',
+            controller: 'ArtisanController',
+            access: { restricted: false }
+        })
         .when('/businesses', {
             templateUrl: 'views/business-list.html',
             controller: 'BusinessController',
@@ -70,7 +75,7 @@ Artisans.config(function ($routeProvider, $locationProvider, $httpProvider) {
         .when('/settings/profile', {
             templateUrl: 'views/settings-profile.html',
             controller: 'ProfileController',
-            access: { restricted: true }
+            access: { restricted: false }
         });
     $locationProvider.html5Mode(true);
 });

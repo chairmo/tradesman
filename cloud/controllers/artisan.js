@@ -29,7 +29,7 @@ module.exports = function (app, io) {
     });
 
     /**
-     * Retrieve All Contacts
+     * Retrieve All Artisans
      */
     app.get('/api/artisan', function (req, res) {
         CRUD().findAll(Artisan, {}, 'asc', req.params.take, req.params.skip, function (success) {
