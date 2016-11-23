@@ -1,0 +1,125 @@
+﻿.artisans-no-splash {
+    width: 100%;
+    overflow-y: hidden;
+    background: white;
+    color: #fff;
+
+    .artisans-nav {
+        border-bottom: none;
+        position: absolute;
+        width: 100%;
+        border: none;
+        z-index: 50;
+        margin: 0;
+        line-height: 0;
+        list-style: none;
+        transition-property: color;
+        transition-duration: .2s;
+        transition-timing-function: ease-in-out;
+        display: block;
+
+        .artisans-logo {
+            margin: 0;
+            line-height: 0;
+            list-style: none;
+            float: left !important;
+            font-family: inherit;
+
+            li {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                margin: 0;
+                padding: 0;
+
+                a {
+                    img {
+                        width: 50px;
+                        padding: 20px;
+                        padding-left: 40px;
+                    }
+                }
+            }
+        }
+
+        .artisans-links {
+            margin: 0;
+            line-height: 0;
+            list-style: none;
+            float: left !important;
+            padding: 0;
+
+            li {
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                padding: 0;
+                margin-top: 45px;
+
+                a {
+                    color: rgba(20,29,33,.5);
+                    padding: 40px;
+                    padding-left: 15px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .artisans-buttons {
+            margin: 0;
+            line-height: 0;
+            list-style: none;
+            float: right !important;
+            padding: 0;
+
+            li {
+                &.login {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 0;
+                    margin-top: 42px;
+
+                    a {
+                        color: #FFF;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+
+                &.signup {
+                    padding: 1.7rem;
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 0;
+                    margin-top: 25px;
+
+                    a {
+                        border: 3px solid #FFF;
+                        color: #FFF;
+                        height: auto;
+                        margin: 0;
+                        padding: .9rem;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        border-radius: 0;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .artisans-caption {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        padding-left: 40px;
+        p{
+
+        }
+    }
+}

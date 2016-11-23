@@ -1,0 +1,957 @@
+.artisans-business-card {
+  margin-bottom: 15px;
+  box-shadow: 0 1px 2px rgba(9, 26, 35, 0.2);
+  display: inline-block;
+  width: 100%;
+  border-color: #808b92;
+  transition: box-shadow .3s ease-out;
+  vertical-align: baseline;
+  zoom: 1;
+  border-width: 0;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center; }
+  .artisans-business-card a {
+    text-decoration: none;
+    color: black; }
+    .artisans-business-card a h5 {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      padding: 10px;
+      font-size: 18px; }
+    .artisans-business-card a h6 {
+      color: gray; }
+    .artisans-business-card a .artisans-image {
+      height: 120px;
+      padding: 10px; }
+      .artisans-business-card a .artisans-image img {
+        height: inherit; }
+    .artisans-business-card a p {
+      padding: 10px;
+      margin: 10px; }
+  .artisans-business-card .artisans-controls {
+    padding: 5px;
+    background: #122a38;
+    color: white;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: bold; }
+
+.artisans-button.default {
+  background-color: #1e2b31;
+  color: #FFF;
+  border-color: transparent;
+  outline: 0 !important;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 0;
+  font-weight: 700;
+  margin-right: 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1.4;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  display: inline !important;
+  padding: 13px;
+  font-size: 14px;
+  margin-left: 40px; }
+
+.artisans-dialog {
+  transform: translate(0, 0);
+  transition: transform .3s ease-out;
+  width: 360px;
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+  text-align: left;
+  position: relative; }
+  .artisans-dialog .artisans-dialog-content {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 0;
+    position: relative;
+    background-color: transparent;
+    outline: 0;
+    background-clip: padding-box; }
+    .artisans-dialog .artisans-dialog-content .artisans-dialog-header {
+      text-align: center;
+      padding: 12px 15px;
+      background-color: #eaf0f3;
+      border-radius: 4px 4px 0 0;
+      border-color: #bfcdd8;
+      background-image: linear-gradient(to top, #eaf0f3 0, #fff 100%);
+      min-height: 16.43px;
+      border-bottom: 1px solid #e5e5e5; }
+      .artisans-dialog .artisans-dialog-content .artisans-dialog-header h4 {
+        color: #0e2735;
+        font-size: 15px;
+        font-weight: 600;
+        text-shadow: 0 1px 0 #fff;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 1.42857143; }
+      .artisans-dialog .artisans-dialog-content .artisans-dialog-header h5 {
+        color: #808b92;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1; }
+    .artisans-dialog .artisans-dialog-content .artisans-dialog-body {
+      margin-bottom: 60px;
+      border-radius: 0 0 4px 4px;
+      padding: 15px;
+      font-size: 13px;
+      background-color: #eaf0f3;
+      background-image: linear-gradient(to top, #eaf0f3 0, #fff 100%);
+      position: relative; }
+      .artisans-dialog .artisans-dialog-content .artisans-dialog-body form {
+        margin-bottom: 0; }
+        .artisans-dialog .artisans-dialog-content .artisans-dialog-body form a {
+          color: #428bca;
+          text-decoration: none; }
+    .artisans-dialog .artisans-dialog-content .artisans-dialog-footer {
+      position: absolute;
+      top: calc(100% + 15px);
+      left: 0;
+      width: 92%;
+      z-index: 1100;
+      text-align: center;
+      color: #fff;
+      background-color: #656f76;
+      border: none;
+      border-radius: 4px;
+      margin-top: 0;
+      padding: 15px; }
+      .artisans-dialog .artisans-dialog-content .artisans-dialog-footer:before {
+        display: table;
+        content: " "; }
+      .artisans-dialog .artisans-dialog-content .artisans-dialog-footer a {
+        color: #fff;
+        font-weight: 700;
+        background: 0 0;
+        text-decoration: none; }
+
+.artisans-entrepreneur-card {
+  margin-bottom: 15px;
+  box-shadow: 0 1px 2px rgba(9, 26, 35, 0.2);
+  display: inline-block;
+  width: 100%;
+  border-color: #808b92;
+  transition: box-shadow .3s ease-out;
+  vertical-align: baseline;
+  zoom: 1;
+  border-width: 0;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center; }
+  .artisans-entrepreneur-card a {
+    text-decoration: none;
+    color: black; }
+    .artisans-entrepreneur-card a h5 {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      padding: 10px;
+      font-size: 18px; }
+    .artisans-entrepreneur-card a h6 {
+      color: gray; }
+    .artisans-entrepreneur-card a .artisans-image {
+      height: 120px;
+      padding: 10px; }
+      .artisans-entrepreneur-card a .artisans-image img {
+        height: inherit;
+        border-radius: 50%;
+        border: 1px solid #ccc; }
+    .artisans-entrepreneur-card a p {
+      padding: 10px;
+      margin: 10px; }
+  .artisans-entrepreneur-card .artisans-controls {
+    padding: 5px;
+    background: #122a38;
+    color: white;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: bold; }
+
+.artisans-event-card {
+  margin-bottom: 15px;
+  box-shadow: 0 1px 2px rgba(9, 26, 35, 0.2);
+  display: inline-block;
+  width: 100%;
+  border-color: #808b92;
+  transition: box-shadow .3s ease-out;
+  vertical-align: baseline;
+  zoom: 1;
+  border-width: 0;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center; }
+  .artisans-event-card a {
+    text-decoration: none;
+    color: black; }
+    .artisans-event-card a h5 {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      padding: 10px;
+      font-size: 18px; }
+    .artisans-event-card a h6 {
+      color: gray; }
+    .artisans-event-card a .artisans-image {
+      height: 120px;
+      overflow: hidden; }
+      .artisans-event-card a .artisans-image img {
+        width: 100%;
+        background-size: contain; }
+    .artisans-event-card a p {
+      padding: 10px;
+      margin: 10px; }
+  .artisans-event-card .artisans-controls {
+    padding: 5px;
+    background: #122a38;
+    color: white;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: bold; }
+
+.artisans-footer {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.artisans-investor-card {
+  margin-bottom: 15px;
+  box-shadow: 0 1px 2px rgba(9, 26, 35, 0.2);
+  display: inline-block;
+  width: 100%;
+  border-color: #808b92;
+  transition: box-shadow .3s ease-out;
+  vertical-align: baseline;
+  zoom: 1;
+  border-width: 0;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center; }
+  .artisans-investor-card a {
+    text-decoration: none;
+    color: black; }
+    .artisans-investor-card a h5 {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      padding: 10px;
+      font-size: 18px; }
+    .artisans-investor-card a h6 {
+      color: gray; }
+    .artisans-investor-card a .artisans-image {
+      height: 120px;
+      padding: 10px; }
+      .artisans-investor-card a .artisans-image img {
+        height: inherit;
+        border-radius: 50%;
+        border: 1px solid #ccc; }
+    .artisans-investor-card a p {
+      padding: 10px;
+      margin: 10px; }
+  .artisans-investor-card .artisans-controls {
+    padding: 5px;
+    background: #122a38;
+    color: white;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: bold; }
+
+.artisans-no-splash {
+  width: 100%;
+  overflow-y: hidden;
+  background: white;
+  color: #fff; }
+  .artisans-no-splash .artisans-nav {
+    border-bottom: none;
+    position: absolute;
+    width: 100%;
+    border: none;
+    z-index: 50;
+    margin: 0;
+    line-height: 0;
+    list-style: none;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    display: block; }
+    .artisans-no-splash .artisans-nav .artisans-logo {
+      margin: 0;
+      line-height: 0;
+      list-style: none;
+      float: left !important;
+      font-family: inherit; }
+      .artisans-no-splash .artisans-nav .artisans-logo li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        padding: 0; }
+        .artisans-no-splash .artisans-nav .artisans-logo li a img {
+          width: 50px;
+          padding: 20px;
+          padding-left: 40px; }
+    .artisans-no-splash .artisans-nav .artisans-links {
+      margin: 0;
+      line-height: 0;
+      list-style: none;
+      float: left !important;
+      padding: 0; }
+      .artisans-no-splash .artisans-nav .artisans-links li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+        margin-top: 45px; }
+        .artisans-no-splash .artisans-nav .artisans-links li a {
+          color: rgba(20, 29, 33, 0.5);
+          padding: 40px;
+          padding-left: 15px;
+          text-decoration: none;
+          font-weight: bold; }
+    .artisans-no-splash .artisans-nav .artisans-buttons {
+      margin: 0;
+      line-height: 0;
+      list-style: none;
+      float: right !important;
+      padding: 0; }
+      .artisans-no-splash .artisans-nav .artisans-buttons li.login {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-top: 42px; }
+        .artisans-no-splash .artisans-nav .artisans-buttons li.login a {
+          color: #FFF;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none; }
+      .artisans-no-splash .artisans-nav .artisans-buttons li.signup {
+        padding: 1.7rem;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-top: 25px; }
+        .artisans-no-splash .artisans-nav .artisans-buttons li.signup a {
+          border: 3px solid #FFF;
+          color: #FFF;
+          height: auto;
+          margin: 0;
+          padding: .9rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          border-radius: 0;
+          font-weight: bold; }
+  .artisans-no-splash .artisans-caption {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    padding-left: 40px; }
+
+.artisans-splash {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow-y: hidden;
+  background: white;
+  color: #fff;
+  display: block; }
+  .artisans-splash .artisans-nav {
+    border-bottom: none;
+    position: absolute;
+    width: 100%;
+    border: none;
+    z-index: 50;
+    margin: 0;
+    line-height: 0;
+    list-style: none;
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    display: block; }
+    .artisans-splash .artisans-nav .artisans-logo {
+      margin: 0;
+      line-height: 0;
+      list-style: none;
+      float: left !important;
+      font-family: inherit; }
+      .artisans-splash .artisans-nav .artisans-logo li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        padding: 0; }
+        .artisans-splash .artisans-nav .artisans-logo li a img {
+          width: 50px;
+          padding: 20px;
+          padding-left: 40px; }
+    .artisans-splash .artisans-nav .artisans-links {
+      margin: 0;
+      line-height: 0;
+      list-style: none;
+      float: left !important;
+      padding: 0; }
+      .artisans-splash .artisans-nav .artisans-links li {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+        margin-top: 45px; }
+        .artisans-splash .artisans-nav .artisans-links li a {
+          color: rgba(20, 29, 33, 0.5);
+          padding: 40px;
+          padding-left: 15px;
+          text-decoration: none;
+          font-weight: bold; }
+    .artisans-splash .artisans-nav .artisans-buttons {
+      margin: 0;
+      line-height: 0;
+      list-style: none;
+      float: right !important;
+      padding: 0; }
+      .artisans-splash .artisans-nav .artisans-buttons li.login {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-top: 42px; }
+        .artisans-splash .artisans-nav .artisans-buttons li.login a {
+          color: #FFF;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none; }
+      .artisans-splash .artisans-nav .artisans-buttons li.signup {
+        padding: 1.7rem;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-top: 25px; }
+        .artisans-splash .artisans-nav .artisans-buttons li.signup a {
+          border: 3px solid #FFF;
+          color: #FFF;
+          height: auto;
+          margin: 0;
+          padding: .9rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          border-radius: 0;
+          font-weight: bold; }
+  .artisans-splash .artisans-caption {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    padding-left: 40px; }
+
+.artisans-page-forgot-password {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(https://d1g84eaw0qjo7s.cloudfront.net/images/world_transparent-523d3e79.png) center no-repeat fixed #1f3b4b; }
+  .artisans-page-forgot-password .artisans-logo {
+    z-index: 1051;
+    background: 0 0;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 3px;
+    vertical-align: middle;
+    zoom: 1; }
+    .artisans-page-forgot-password .artisans-logo a {
+      color: #fff;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 47px;
+      text-decoration: none;
+      background: 0 0; }
+      .artisans-page-forgot-password .artisans-logo a strong {
+        font-weight: 600; }
+  .artisans-page-forgot-password .artisans-forgot-password {
+    margin-top: 140px;
+    margin-bottom: 0;
+    overflow: visible;
+    display: block;
+    opacity: 1;
+    text-align: center;
+    position: fixed;
+    z-index: 1050;
+    outline: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    transition: opacity .15s linear; }
+
+.artisans-page-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(https://d1g84eaw0qjo7s.cloudfront.net/images/world_transparent-523d3e79.png) center no-repeat fixed #1f3b4b; }
+  .artisans-page-login .artisans-logo {
+    z-index: 1051;
+    background: 0 0;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 3px;
+    vertical-align: middle;
+    zoom: 1; }
+    .artisans-page-login .artisans-logo a {
+      color: #fff;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 47px;
+      text-decoration: none;
+      background: 0 0; }
+      .artisans-page-login .artisans-logo a strong {
+        font-weight: 600; }
+  .artisans-page-login .artisans-login {
+    margin-top: 140px;
+    margin-bottom: 0;
+    overflow: visible;
+    display: block;
+    opacity: 1;
+    text-align: center;
+    position: fixed;
+    z-index: 1050;
+    outline: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    transition: opacity .15s linear; }
+
+.artisans-page-register {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(https://d1g84eaw0qjo7s.cloudfront.net/images/world_transparent-523d3e79.png) center no-repeat fixed #1f3b4b; }
+  .artisans-page-register .artisans-logo {
+    z-index: 1051;
+    background: 0 0;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 3px;
+    vertical-align: middle;
+    zoom: 1; }
+    .artisans-page-register .artisans-logo a {
+      color: #fff;
+      display: -moz-inline-stack;
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 47px;
+      text-decoration: none;
+      background: 0 0; }
+      .artisans-page-register .artisans-logo a strong {
+        font-weight: 600; }
+  .artisans-page-register .artisans-register {
+    margin-top: 140px;
+    margin-bottom: 0;
+    overflow: visible;
+    display: block;
+    opacity: 1;
+    text-align: center;
+    position: fixed;
+    z-index: 1050;
+    outline: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    transition: opacity .15s linear; }
+
+.artisans-page-settings {
+  padding: 30px !important;
+  margin: auto;
+  max-width: 1140px; }
+
+.artisans-card-post {
+  margin-bottom: 15px;
+  box-shadow: 0 1px 2px rgba(9, 26, 35, 0.2);
+  display: inline-block;
+  width: 100%;
+  border-color: #808b92;
+  transition: box-shadow .3s ease-out;
+  vertical-align: baseline;
+  zoom: 1;
+  border-width: 0;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .artisans-card-post .artisans-title a {
+    text-decoration: none;
+    color: black; }
+    .artisans-card-post .artisans-title a h6 {
+      padding: 10px;
+      margin: 0;
+      font-weight: bold; }
+      .artisans-card-post .artisans-title a h6 .artisans-time {
+        float: right;
+        color: gray; }
+  .artisans-card-post .artisans-media img {
+    width: 100%; }
+  .artisans-card-post .artisans-text {
+    padding: 10px; }
+    .artisans-card-post .artisans-text p {
+      margin-bottom: 0; }
+  .artisans-card-post .artisans-actions {
+    border-top: 1px solid #e1e2e3;
+    background: #f6f7f9; }
+    .artisans-card-post .artisans-actions .artisans-interactions {
+      padding-top: 6px; }
+      .artisans-card-post .artisans-actions .artisans-interactions a {
+        color: black;
+        text-decoration: none;
+        padding: 10px; }
+        .artisans-card-post .artisans-actions .artisans-interactions a img {
+          width: 20px; }
+        .artisans-card-post .artisans-actions .artisans-interactions a span {
+          vertical-align: top; }
+    .artisans-card-post .artisans-actions .artisans-comment {
+      padding: 10px; }
+      .artisans-card-post .artisans-actions .artisans-comment p {
+        margin-bottom: 5px;
+        padding-left: 4px;
+        padding-right: 4px; }
+      .artisans-card-post .artisans-actions .artisans-comment form {
+        margin-top: 20px;
+        margin-bottom: 0; }
+        .artisans-card-post .artisans-actions .artisans-comment form textarea {
+          resize: vertical;
+          margin-bottom: 0; }
+
+.artisans-content-area {
+  margin-left: 250px;
+  padding-top: 50px;
+  height: 100%; }
+
+.artisans-form {
+  background: #fff;
+  border-width: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  border-color: #ddd;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .artisans-form .artisans-form-header {
+    padding: 13px 30px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #808b92;
+    background: #fff;
+    border-bottom: 1px solid #eaf0f3;
+    border-top: 0;
+    border-color: #ddd; }
+    .artisans-form .artisans-form-header h4 {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      line-height: 1.1;
+      color: inherit; }
+  .artisans-form .artisans-form-body {
+    padding: 30px;
+    box-sizing: border-box; }
+
+body {
+  background: #eaf0f3;
+  font-size: 14px;
+  color: #091a23;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optmizeLegibility;
+  /*min-width: 1290px;*/ }
+
+.artisans-header {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, #fff 0, #f2f6f8 100%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 50px;
+  min-width: 1290px;
+  margin: 0 !important;
+  padding: 0 !important;
+  -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
+  z-index: 101; }
+  .artisans-header .artisans-header-brand {
+    float: left;
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 50px;
+    text-align: center; }
+    .artisans-header .artisans-header-brand a {
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      color: #0e2735;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 42px;
+      text-decoration: none;
+      background: 0 0; }
+      .artisans-header .artisans-header-brand a img {
+        border: 0;
+        vertical-align: middle;
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        color: #0e2735;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 42px;
+        text-decoration: none;
+        width: 38px;
+        padding-top: 7px;
+        opacity: 0.5; }
+  .artisans-header .artisans-navigation {
+    display: block;
+    margin-bottom: 0 !important; }
+    .artisans-header .artisans-navigation .artisans-menu-left {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      float: left !important; }
+      .artisans-header .artisans-navigation .artisans-menu-left li {
+        float: left;
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        margin-bottom: 0; }
+        .artisans-header .artisans-navigation .artisans-menu-left li:first-child {
+          border-left: 1px solid #eaf0f3; }
+        .artisans-header .artisans-navigation .artisans-menu-left li a {
+          display: inline-block;
+          vertical-align: baseline;
+          zoom: 1;
+          position: relative;
+          padding: 0 20px;
+          height: 50px;
+          line-height: 50px;
+          color: #0e2735;
+          border-right: 1px solid #eaf0f3;
+          transition: all .3s ease-out;
+          text-decoration: none;
+          background: 0 0; }
+          .artisans-header .artisans-navigation .artisans-menu-left li a:hover {
+            color: #0e2735;
+            background: #fff; }
+    .artisans-header .artisans-navigation .artisans-menu-right {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      float: right !important; }
+      .artisans-header .artisans-navigation .artisans-menu-right li {
+        float: left;
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        position: relative;
+        margin-bottom: 0; }
+        .artisans-header .artisans-navigation .artisans-menu-right li a {
+          padding: 0 25px;
+          position: relative;
+          display: -moz-inline-stack;
+          display: inline-block;
+          vertical-align: baseline;
+          zoom: 1;
+          padding: 0 25px;
+          height: 50px;
+          line-height: 50px;
+          color: #0e2735;
+          border-left: 1px solid #eaf0f3;
+          transition: all .3s ease-out;
+          text-decoration: none;
+          background: 0 0; }
+          .artisans-header .artisans-navigation .artisans-menu-right li a:hover {
+            color: #0e2735;
+            background: #fff; }
+          .artisans-header .artisans-navigation .artisans-menu-right li a img {
+            position: relative;
+            top: -1px;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 9999px;
+            border: 0;
+            vertical-align: middle; }
+          .artisans-header .artisans-navigation .artisans-menu-right li a span {
+            margin-right: 10px;
+            max-width: 120px;
+            overflow: hidden;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: baseline;
+            zoom: 1;
+            line-height: 27px;
+            margin-bottom: -8px;
+            white-space: nowrap;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis; }
+
+.artisans-main-content {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  min-width: 1290px; }
+
+.artisans-sidebar {
+  left: 0;
+  top: 50px;
+  bottom: 0;
+  display: inline-block;
+  width: 250px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #091a23 !important;
+  z-index: 900;
+  position: fixed;
+  vertical-align: baseline;
+  zoom: 1; }
+  .artisans-sidebar .artisans-profile-summary {
+    padding: 15px 0;
+    position: relative;
+    background-color: #0e2735;
+    background-image: linear-gradient(to right, #0e2735 0, #091a23 100%);
+    text-align: center; }
+    .artisans-sidebar .artisans-profile-summary:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(https://d1g84eaw0qjo7s.cloudfront.net/images/map-803bfd72.png);
+      background-position: center;
+      filter: alpha(Opacity=5);
+      opacity: .05; }
+    .artisans-sidebar .artisans-profile-summary img {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      background: #fff;
+      position: relative;
+      z-index: 100;
+      border-radius: 9999px;
+      border: 0;
+      vertical-align: middle; }
+    .artisans-sidebar .artisans-profile-summary p {
+      margin: 10px 0 0;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 100; }
+  .artisans-sidebar .artisans-menu-title {
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 25px;
+    color: #517284;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    text-transform: uppercase; }
+  .artisans-sidebar .artisans-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    .artisans-sidebar .artisans-menu-list li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      list-style: none; }
+      .artisans-sidebar .artisans-menu-list li a {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 6px 30px;
+        border: 0;
+        font-size: 13px;
+        font-weight: 400;
+        color: #bfcdd8;
+        transition: color .3s ease-out;
+        text-decoration: none;
+        background: 0 0; }
+        .artisans-sidebar .artisans-menu-list li a:active, .artisans-sidebar .artisans-menu-list li a.active {
+          padding: 6px 30px 6px 27px;
+          background: #0e2735;
+          color: #fff;
+          border-left: 3px solid #0392c9; }
+
+/*# sourceMappingURL=artisans.css.map */

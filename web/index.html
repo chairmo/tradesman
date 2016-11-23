@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Artisans" ng-controller="HomeController">
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Artisans</title>
+
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/libs/skeleton/css/normalize.css">
+    <link rel="stylesheet" href="/libs/skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="/libs/angular-loading-bar/build/loading-bar.min.css">
+    <link rel="stylesheet" href="/css/artisans.css">
+
+</head>
+
+<body class="code-snippets-visible">
+
+    <div class="ng-view"></div>
+
+    <script src="/libs/angular/angular.min.js"></script>
+    <script src="/libs/angular-route/angular-route.min.js"></script>
+    <script src="/libs/angular-resource/angular-resource.min.js"></script>
+    <script src="/libs/angular-cookies/angular-cookies.min.js"></script>
+    <script src="/libs/angular-animate/angular-animate.min.js"></script>
+    <script src="/libs/angular-loading-bar/build/loading-bar.min.js"></script>
+
+    <script src="/js/App.js"></script>
+
+    <script src="/js/Controllers/homeController.js"></script>
+    <script src="/js/Controllers/aboutController.js"></script>
+    <script src="/js/Controllers/loginController.js"></script>
+    <script src="/js/Controllers/registerController.js"></script>
+    <script src="/js/Controllers/forgotPasswordController.js"></script>
+
+    <script src="/js/Models/userModel.js"></script>
+
+    <script src="/js/Services/authenticationService.js"></script>
+    <script src="/js/Services/feedService.js"></script>
+    <script src="/js/Services/tokenInterceptor.js"></script>
+    <script src="/js/Services/userService.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.artisans-button {
+    &.default {
+        background-color: #1e2b31;
+        color: #FFF;
+        border-color: transparent;
+        outline: 0 !important;
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 0;
+        font-weight: 700;
+        margin-right: 10px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+        line-height: 1.4;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        display: inline !important;
+        padding: 13px;
+        font-size: 14px;
+        margin-left: 40px;
+    }
+}

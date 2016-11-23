@@ -1,0 +1,165 @@
+.artisans-header {
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom,#fff 0,#f2f6f8 100%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 50px;
+    min-width: 1290px;
+    margin: 0 !important;
+    padding: 0 !important;
+    -ms-box-shadow: 0 1px 3px rgba(0,0,0,.22);
+    -o-box-shadow: 0 1px 3px rgba(0,0,0,.22);
+    box-shadow: 0 1px 3px rgba(0,0,0,.22);
+    z-index: 101;
+
+    .artisans-header-brand {
+        float: left;
+        display: block;
+        position: relative;
+        width: 250px;
+        height: 50px;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            vertical-align: baseline;
+            zoom: 1;
+            color: #0e2735;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 42px;
+            text-decoration: none;
+            background: 0 0;
+
+            img {
+                border: 0;
+                vertical-align: middle;
+                display: inline-block;
+                vertical-align: baseline;
+                zoom: 1;
+                color: #0e2735;
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 42px;
+                text-decoration: none;
+                width: 38px;
+                padding-top: 7px;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .artisans-navigation {
+        display: block;
+        margin-bottom: 0 !important;
+
+        .artisans-menu-left {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: left !important;
+
+            li {
+                float: left;
+                display: inline-block;
+                vertical-align: baseline;
+                zoom: 1;
+                margin-bottom: 0;
+
+                &:first-child {
+                    border-left: 1px solid #eaf0f3;
+                }
+
+                a {
+                    display: inline-block;
+                    vertical-align: baseline;
+                    zoom: 1;
+                    position: relative;
+                    padding: 0 20px;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #0e2735;
+                    border-right: 1px solid #eaf0f3;
+                    transition: all .3s ease-out;
+                    text-decoration: none;
+                    background: 0 0;
+
+                    &:hover {
+                        color: #0e2735;
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
+        .artisans-menu-right {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: right !important;
+
+            li {
+                float: left;
+                display: -moz-inline-stack;
+                display: inline-block;
+                vertical-align: baseline;
+                zoom: 1;
+                position: relative;
+                margin-bottom: 0;
+
+                a {
+                    padding: 0 25px;
+                    position: relative;
+                    display: -moz-inline-stack;
+                    display: inline-block;
+                    vertical-align: baseline;
+                    zoom: 1;
+                    padding: 0 25px;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #0e2735;
+                    border-left: 1px solid #eaf0f3;
+                    transition: all .3s ease-out;
+                    text-decoration: none;
+                    background: 0 0;
+
+                    &:hover {
+                        color: #0e2735;
+                        background: #fff;
+                    }
+
+                    img {
+                        position: relative;
+                        top: -1px;
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                        border-radius: 9999px;
+                        border: 0;
+                        vertical-align: middle;
+                    }
+
+                    span {
+                        margin-right: 10px;
+                        max-width: 120px;
+                        overflow: hidden;
+                        display: -moz-inline-stack;
+                        display: inline-block;
+                        vertical-align: baseline;
+                        zoom: 1;
+                        line-height: 27px;
+                        margin-bottom: -8px;
+                        white-space: nowrap;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
+}

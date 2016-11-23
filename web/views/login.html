@@ -1,0 +1,51 @@
+﻿<div class="artisans-page-login">
+    <div class="artisans-logo">
+        <a href="/">
+            <img src="/img//logo-inverse.png" width="60" />
+        </a>
+    </div>
+    <div class="artisans-content">
+        <div class="artisans-login">
+            <div class="artisans-dialog">
+                <div class="artisans-dialog-content">
+                    <div class="artisans-dialog-header">
+                        <h4>Login</h4>
+                        <h5>Welcome Back</h5>
+                    </div>
+                    <div class="artisans-dialog-body">
+                        <form ng-submit="token();">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <label>Email or Username</label>
+                                    <input class="u-full-width" type="text" placeholder="Email or Username" ng-model="username" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <div class="twelve columns">
+                                        <label>Password</label>
+                                        <input class="u-full-width" type="password" placeholder="Password" ng-model="password" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <input class="button-primary u-full-width" type="submit" value="Login">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <a class="u-pull-right" href="/forgot-password">Forgot password?</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="artisans-dialog-footer">
+                        Not a Memeber?
+                        <a href="/register"><strong>Register</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

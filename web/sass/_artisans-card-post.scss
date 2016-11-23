@@ -1,0 +1,89 @@
+.artisans-card-post {
+    margin-bottom: 15px;
+    box-shadow: 0 1px 2px rgba(9,26,35,.2);
+    display: inline-block;
+    width: 100%;
+    border-color: #808b92;
+    transition: box-shadow .3s ease-out;
+    vertical-align: baseline;
+    zoom: 1;
+    border-width: 0;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    .artisans-title {
+        a {
+            text-decoration: none;
+            color: black;
+
+            h6 {
+                padding: 10px;
+                margin: 0;
+                font-weight: bold;
+
+                .artisans-time {
+                    float: right;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .artisans-media {
+        img {
+            width: 100%;
+        }
+    }
+
+    .artisans-text {
+        padding: 10px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .artisans-actions {
+        border-top: 1px solid #e1e2e3;
+        background: #f6f7f9;
+
+        .artisans-interactions {
+            padding-top: 6px;
+
+            a {
+                color: black;
+                text-decoration: none;
+                padding: 10px;
+
+                img {
+                    width: 20px;
+                }
+
+                span {
+                    vertical-align: top;
+                }
+            }
+        }
+
+        .artisans-comment {
+            padding: 10px;
+
+            p {
+                margin-bottom: 5px;
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+
+            form {
+                margin-top: 20px;
+                margin-bottom: 0;
+
+                textarea {
+                    resize: vertical;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

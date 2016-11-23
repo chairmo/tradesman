@@ -1,0 +1,57 @@
+.artisans-page-register {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://d1g84eaw0qjo7s.cloudfront.net/images/world_transparent-523d3e79.png) center no-repeat fixed #1f3b4b;
+
+    .artisans-logo {
+        z-index: 1051;
+        background: 0 0;
+        color: #fff;
+        display: block;
+        position: absolute;
+        top: 8%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border-radius: 3px;
+        vertical-align: middle;
+        zoom: 1;
+
+        a {
+            color: #fff;
+            display: -moz-inline-stack;
+            display: inline-block;
+            vertical-align: baseline;
+            zoom: 1;
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 47px;
+            text-decoration: none;
+            background: 0 0;
+
+            strong {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .artisans-register {
+        margin-top: 140px;
+        margin-bottom: 0;
+        overflow: visible;
+        display: block;
+        opacity: 1;
+        text-align: center;
+        position: fixed;
+        z-index: 1050;
+        outline: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        transition: opacity .15s linear;
+    }
+}
