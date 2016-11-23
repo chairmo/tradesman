@@ -1,12 +1,12 @@
 var CRUD = require('../utils/crud');
 var Artisan = require('../models/artisan');
 
-module.exports = function (app, io) {
+module.exports = function(app, io) {
 
     /**
      * Create new Artisan
      */
-    app.post('/api/artisan', function (req, res) {
+    app.post('/api/artisan', function(req, res) {
 
         // Object to be persisted to the database
         var createObject = {
@@ -20,9 +20,9 @@ module.exports = function (app, io) {
             skill: req.body.skill
         };
 
-        CRUD().create(Artisan, createObject, function (success) {
+        CRUD().create(Artisan, createObject, function(success) {
             res.json(success);
-        }, function (error) {
+        }, function(error) {
             res.json(error);
         });
 
@@ -31,10 +31,10 @@ module.exports = function (app, io) {
     /**
      * Retrieve All Artisans
      */
-    app.get('/api/artisan', function (req, res) {
-        CRUD().findAll(Artisan, {}, 'asc', req.params.take, req.params.skip, function (success) {
+    app.get('/api/artisan', function(req, res) {
+        CRUD().findAll(Artisan, {}, 'asc', req.params.take, req.params.skip, function(success) {
             res.json(success);
-        }, function (error) {
+        }, function(error) {
             res.json(error);
         });
     });
@@ -42,16 +42,16 @@ module.exports = function (app, io) {
     /**
      * Retrieve Single Artisan
      */
-    app.get('/api/artisan/:id', function (req, res) {
+    app.get('/api/artisan/:id', function(req, res) {
 
         // Find an object based on the following properties
         var findObject = {
             _id: req.params.id
         };
 
-        CRUD().findOne(Artisan, findObject, function (success) {
+        CRUD().findOne(Artisan, findObject, function(success) {
             res.json(success);
-        }, function (error) {
+        }, function(error) {
             res.json(error);
         });
 
@@ -60,7 +60,7 @@ module.exports = function (app, io) {
     /**
      * Update Existing Artisan
      */
-    app.put('/api/artisan/:id', function (req, res) {
+    app.put('/api/artisan/:id', function(req, res) {
 
         // Details to be updated in the database
         var updateObject = {
@@ -79,9 +79,9 @@ module.exports = function (app, io) {
             _id: req.params.id
         };
 
-        CRUD().update(Artisan, findObject, updateObject, function (success) {
+        CRUD().update(Artisan, findObject, updateObject, function(success) {
             res.json(success);
-        }, function (error) {
+        }, function(error) {
             res.json(error);
         });
 

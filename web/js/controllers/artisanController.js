@@ -11,4 +11,15 @@ angular.module('Artisans').controller('ArtisanController', [
                 });
         };
 
+        $scope.artisans = [];
+
+        $scope.getAll = function () {
+            ArtisanService.getAll()
+                .then(function (response) {
+                    $scope.artisans = response.data;
+                }, function (data) {
+                    alert("Failed to find Artisans");
+                });
+        };
+
     }]);

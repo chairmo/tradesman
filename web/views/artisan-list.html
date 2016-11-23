@@ -1,4 +1,4 @@
-﻿<header class="artisans-header">
+﻿<header class="artisans-header" ng-init="getAll()">
     <div class="artisans-header-brand">
         <a href="/">
             <img class="artisans-logo" src="/img/logo.png" />
@@ -16,7 +16,8 @@
             </li>
             <li>
                 <a href="settings/profile">
-                    <img src="https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/13118990_10208602647238138_2898330164395268429_n.jpg?oh=73cd7e4bf5a1965deef3580c1dd1d234&oe=58623DCB" width="40" />
+                    <img src="https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/13118990_10208602647238138_2898330164395268429_n.jpg?oh=73cd7e4bf5a1965deef3580c1dd1d234&oe=58623DCB"
+                        width="40" />
                     <span>MaziMuhlari</span>
                 </a>
             </li>
@@ -28,38 +29,38 @@
         <div class="container">
             <div class="row">
                 <div class="eight columns">
-                    <input type="search" class="u-full-width" placeholder="search for an artisan by typing here..." />
+                    <input type="search" class="u-full-width" placeholder="search for an artisan by typing here..." ng-model="search" />
                 </div>
                 <div class="four columns">
                     <a href="/artisan/create" class="button button-primary">Create Artisan</a>
                 </div>
             </div>
             <div class="row">
-                <div class="four columns">
+                <div class="twelve columns" ng-repeat="artisan in artisans | filter: search">
                     <div class="artisans-business-card">
                         <a href="#">
-                            <h5>Mazi Muhlari Plumbing</h5>
-                            <h6>Mazi Muhlari</h6>
+                            <h5>{{artisan.company}}</h5>
+                            <h6>{{artisan.name}} {{artisan.surname}}</h6>
                             <div class="artisans-image">
                                 <img src="/img/logo.png" />
                             </div>
                             <p>
-                                I run a successful plumbing company for almost 5 years and have worked on various jobs from residentials to industrial clients. <br />
-                                <strong>Cell: </strong>0000000000<br />
-                                <strong>Email: </strong>adsfas@sdfaf.com
-
+                                {{artisan.skill}}
+                                <br />
+                                <strong>Cell: </strong>{{artisan.cell}}<br />
+                                <strong>Email: </strong>{{artisan.email}}
                             </p>
                         </a>
                         <div class="artisans-controls">
                             <div class="row">
                                 <div class="four columns">
-                                    5 Years
+                                    {{artisan.experience}}
                                 </div>
                                 <div class="four columns">
                                     Pretoria
                                 </div>
                                 <div class="four columns">
-                                    Certified
+                                    {{artisan.capacity}}
                                 </div>
                             </div>
                         </div>
