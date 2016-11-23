@@ -1,28 +1,26 @@
-var request = require('request');
-var util = require('util');
 var CRUD = require('../utils/crud');
-var Contact = require('../models/contact');
+var Artisan = require('../models/artisan');
 
 module.exports = function (app, io) {
 
     /**
-     * Create new Contact
+     * Create new Artisan
      */
-    app.post('/api/contact', function (req, res) {
+    app.post('/api/artisan', function (req, res) {
 
         // Object to be persisted to the database
         var createObject = {
-            MSISDN: req.body.MSISDN,
-            ID: req.body.ID,
-            Firstname: req.body.Firstname,
-            Lastname: req.body.Lastname,
-            Status: req.body.Status,
-            Salary: req.body.Salary,
-            RelationshipStatus: req.body.RelationshipStatus
+            name: req.body.name,
+            surname: req.body.surname,
+            company: req.body.company,
+            cell: req.body.cell,
+            email: req.body.email,
+            experience: req.body.experience,
+            capacity: req.body.capacity,
+            skill: req.body.skill
         };
 
-        CRUD().create(Contact, createObject, function (success) {
-            io.emit('contact create', success);
+        CRUD().create(Artisan, createObject, function (success) {
             res.json(success);
         }, function (error) {
             res.json(error);
@@ -33,8 +31,8 @@ module.exports = function (app, io) {
     /**
      * Retrieve All Contacts
      */
-    app.get('/api/contact', function (req, res) {
-        CRUD().findAll(Contact, {}, 'asc', req.params.take, req.params.skip, function (success) {
+    app.get('/api/artisan', function (req, res) {
+        CRUD().findAll(Artisan, {}, 'asc', req.params.take, req.params.skip, function (success) {
             res.json(success);
         }, function (error) {
             res.json(error);
@@ -42,16 +40,16 @@ module.exports = function (app, io) {
     });
 
     /**
-     * Retrieve Single Contact
+     * Retrieve Single Artisan
      */
-    app.get('/api/contact/:id', function (req, res) {
+    app.get('/api/artisan/:id', function (req, res) {
 
         // Find an object based on the following properties
         var findObject = {
             _id: req.params.id
         };
 
-        CRUD().findOne(Contact, findObject, function (success) {
+        CRUD().findOne(Artisan, findObject, function (success) {
             res.json(success);
         }, function (error) {
             res.json(error);
@@ -60,34 +58,20 @@ module.exports = function (app, io) {
     });
 
     /**
-     * Update Existing Contact
+     * Update Existing Artisan
      */
-    app.put('/api/contact/:id', function (req, res) {
-
-        var status = "Pending";
-
-        if (req.body.ID && req.body.Firstname && req.body.Lastname && req.body.Salary) {
-            status = "Complete";
-        }
+    app.put('/api/artisan/:id', function (req, res) {
 
         // Details to be updated in the database
         var updateObject = {
-            MSISDN: req.body.MSISDN,
-            ID: req.body.ID,
-            Email: req.body.Email,
-            Firstname: req.body.Firstname,
-            Lastname: req.body.Lastname,
-            Employer: req.body.Employer,
-            Status: status,
-            Salary: req.body.Salary,
-            Spouses: req.body.Spouses,
-            Children: req.body.Children,
-            OtherDependants: req.body.OtherDependants,
-            Bathrooms: req.body.Bathrooms,
-            Kitchens: req.body.Kitchens,
-            Bedrooms: req.body.Bedrooms,
-            Fax: req.body.Fax,
-            RelationshipStatus: req.body.RelationshipStatus,
+            name: req.body.name,
+            surname: req.body.surname,
+            company: req.body.company,
+            cell: req.body.cell,
+            email: req.body.email,
+            experience: req.body.experience,
+            capacity: req.body.capacity,
+            skill: req.body.skill
         };
 
         // The parameters the find will be based on
@@ -95,7 +79,7 @@ module.exports = function (app, io) {
             _id: req.params.id
         };
 
-        CRUD().update(Contact, findObject, updateObject, function (success) {
+        CRUD().update(Artisan, findObject, updateObject, function (success) {
             res.json(success);
         }, function (error) {
             res.json(error);

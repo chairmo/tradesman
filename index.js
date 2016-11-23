@@ -35,7 +35,9 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(express.static(__dirname + '/web'));
 
 // Configure Routes / API ==================================================
-require('./cloud/controllers/routes')(app);;
+require('./cloud/controllers/artisan')(app);
+require('./cloud/controllers/user')(app);
+require('./cloud/controllers/routes')(app);
 
 // start app ===============================================
 // startup our app at http://localhost:3001
