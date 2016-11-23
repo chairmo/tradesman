@@ -24,13 +24,13 @@ angular.module('Artisans').directive('artisanCard', function ($templateCache, $c
                         '<div class="artisans-controls">' +
                             '<div class="row">' +
                                 '<div class="four columns">' +
-                                    '{{artisanList[' + current +'].experience}}' +
+                                    '{{artisanList[' + current +'].experience}} years' +
                                 '</div>' +
                                 '<div class="four columns">' +
                                     '{{artisanList[' + current +'].location}}' +
                                 '</div>' +
                                 '<div class="four columns">' +
-                                    '{{artisanList[' + current +'].capacity}}' +
+                                    '{{artisanList[' + current +'].capacity}} workers' +
                                 '</div>' +
                             '</div>' +
                         '</div>' +
