@@ -42,6 +42,11 @@
     <div class="artisans-content-area">
         <div class="artisans-page-settings">
             <div class="">
+                <div class="row">
+                    <div class="twelve columns">
+                        <input type="search" class="u-full-width" placeholder="search for a particular work item here..." ng-model="search" />
+                    </div>
+                </div>
                 <form class="artisans-form" ng-init="getAll()">
                     <div class="artisans-form-header">
                         <h4>Work</h4>
@@ -58,7 +63,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat="work in works">
+                                <tr ng-repeat="work in works | filter: search">
                                     <td>{{work.name}}</td>
                                     <td>{{work.surname}}</td>
                                     <td>{{work.location}}</td>
