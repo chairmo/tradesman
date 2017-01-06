@@ -36,21 +36,21 @@
             <div class="row">
                 <div class="six columns">
                     <label>Name</label>
-                    <input class="u-full-width" type="text" placeholder="Name" ng-model="name">
+                    <input class="u-full-width" type="text" placeholder="Name" ng-model="work.name">
                 </div>
                 <div class="six columns">
                     <label>Surname</label>
-                    <input class="u-full-width" type="text" placeholder="Surname" ng-model="surname">
+                    <input class="u-full-width" type="text" placeholder="Surname" ng-model="work.surname">
                 </div>
             </div>
             <div class="row">
                 <div class="six columns">
                     <label>Cell</label>
-                    <input class="u-full-width" type="tel" placeholder="Cellphone (e.g. +27000000000)" ng-model="cell">
+                    <input class="u-full-width" type="tel" placeholder="Cellphone (e.g. +27000000000)" ng-model="work.cell">
                 </div>
             </div>
             <label>Description</label>
-            <textarea rows="4" class="u-full-width" placeholder="Describe the work that you want done."></textarea>
+            <textarea rows="4" class="u-full-width" placeholder="Describe the work that you want done." ng-model="work.description"></textarea>
             <input class="button-primary" type="submit" value="Submit">
         </div>
     </form>

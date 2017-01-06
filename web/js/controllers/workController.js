@@ -3,6 +3,7 @@ angular.module('Artisans').controller('WorkController', [
     function ($scope, $filter, $routeParams, WorkService) {
 
         $scope.createWork = function () {
+            $scope.work.artisan = $routeParams.workId;
             WorkService.create($scope.work)
                 .then(function (response) {
                     alert("successfully created Work :)");
