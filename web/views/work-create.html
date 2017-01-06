@@ -53,6 +53,15 @@
                     <input class="u-full-width" type="text" placeholder="e.g. 30 Trade Street, Centurion" ng-model="work.location" required="required">
                 </div>
             </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Do you own the property?</label>
+                    <select class="u-full-width" ng-model="work.owner" required="required">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
             <label>Description</label>
             <textarea rows="4" class="u-full-width" placeholder="Describe the work that you want done." ng-model="work.description" required="required"></textarea>
             <input class="button-primary" type="submit" value="Submit">
