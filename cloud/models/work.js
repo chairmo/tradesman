@@ -6,6 +6,7 @@ module.exports = mongoose.model('Work', new mongoose.Schema({
     surname: { type: String, default: '' },
     location: { type: String, default: '' },
     cell: { type: String, default: '' },
+    description: { type: String, default: '' },
     rating: { type: Number },
     created_on: { type: Date, default: Date.now }
 }));

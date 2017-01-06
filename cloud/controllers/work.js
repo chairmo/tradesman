@@ -21,6 +21,7 @@ module.exports = function (app) {
             surname: req.body.surname,
             location: req.body.location,
             cell: req.body.cell,
+            description: req.body.description,
         };
 
         CRUD().create(Work, createObject, function (success) {
