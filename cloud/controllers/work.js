@@ -29,7 +29,7 @@ module.exports = function (app) {
 
         CRUD().create(Work, createObject, function (success) {
             client.messages.create({
-                body: 'Congratulations ' + req.body.name + ' ' + req.body.surname + ' you have scheduled a job with artisan:' + req.body.artisan + '. Your reference number is #' + ref + '. Please use this to rate the work when it is done by sending it to 0823592858.',
+                body: 'Congratulations ' + req.body.name + ' ' + req.body.surname + ' you have scheduled a job with artisan:' + req.body.artisan + '. Your reference number is #' + ref + '. Please use this to rate the work when it is done by sending 1-5 where 1 is very bad and 5 is very good to 0823592858.',
                 to: req.body.cell,
                 from: '+12565307141'
             }, function (err, message) {
