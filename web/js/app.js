@@ -49,7 +49,7 @@ Artisans.config(function ($routeProvider, $locationProvider, $httpProvider) {
         })
         .when('/work/:id', {
             templateUrl: 'views/work-create.html',
-            controller: 'ArtisanController',
+            controller: 'WorkController',
             access: { restricted: false }
         })
         .when('/artisan/create', {

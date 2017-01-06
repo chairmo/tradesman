@@ -16,8 +16,7 @@
             </li>
             <li>
                 <a href="settings/profile">
-                    <img src="http://digventures.com/flag-fen/wp-content/uploads/placeholder-man-grid-240x268.png"
-                        width="40" />
+                    <img src="http://digventures.com/flag-fen/wp-content/uploads/placeholder-man-grid-240x268.png" width="40" />
                     <span>Anonymous</span>
                 </a>
             </li>
@@ -29,26 +28,31 @@
 <div class="container">
 
     <!-- The above form looks like this -->
-    <form>
-        <div class="row">
-            <div class="six columns">
-                <label>Name</label>
-                <input class="u-full-width" type="text" placeholder="Name" ng-model="name">
-            </div>
-            <div class="six columns">
-                <label>Surname</label>
-                <input class="u-full-width" type="text" placeholder="Surname" ng-model="surname">
-            </div>
+    <form class="artisans-form" ng-submit="createWork()">
+        <div class="artisans-form-header">
+            <h4>Book Work</h4>
         </div>
-        <div class="row">
-            <div class="six columns">
-                <label>Cell</label>
-                <input class="u-full-width" type="tel" placeholder="Cellphone (e.g. +27000000000)"  ng-model="cell">
+        <div class="artisans-form-body">
+            <div class="row">
+                <div class="six columns">
+                    <label>Name</label>
+                    <input class="u-full-width" type="text" placeholder="Name" ng-model="name">
+                </div>
+                <div class="six columns">
+                    <label>Surname</label>
+                    <input class="u-full-width" type="text" placeholder="Surname" ng-model="surname">
+                </div>
             </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Cell</label>
+                    <input class="u-full-width" type="tel" placeholder="Cellphone (e.g. +27000000000)" ng-model="cell">
+                </div>
+            </div>
+            <label>Description</label>
+            <textarea rows="4" class="u-full-width" placeholder="Describe the work that you want done."></textarea>
+            <input class="button-primary" type="submit" value="Submit">
         </div>
-        <label>Description</label>
-        <textarea rows="4" class="u-full-width" placeholder="Describe the work that you want done."></textarea>
-        <input class="button-primary" type="submit" value="Submit">
     </form>
 
 </div>
