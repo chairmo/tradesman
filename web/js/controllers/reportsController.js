@@ -1,21 +1,24 @@
 angular.module('Artisans').controller('ReportsController', [
-    '$scope', '$filter', '$routeParams', 'WorkService',
-    function ($scope, $filter, $routeParams, WorkService) {
+    '$scope', '$filter', '$routeParams', 'WorkService', 'ArtisanService',
+    function ($scope, $filter, $routeParams, WorkService, ArtisanService) {
 
         $scope.works = [];
+        $scope.artisans = [];
 
         $scope.getAll = function () {
             WorkService.getAll()
                 .then(function (response) {
                     $scope.works = response.data;
-                    $scope.filterWorks();
                 }, function (data) {
                     alert("Failed to find Works");
                 });
-        };
 
-        $scope.filterWorks = function () {
-            $scope.filteredTeachers = $filter('filter')($scope.works, $scope.search);
+            ArtisanService.getAll()
+                .then(function (response) {
+                    $scope.artisans = response.data;
+                }, function (data) {
+                    alert("Failed to find Artisans");
+                });
         };
 
     }]);

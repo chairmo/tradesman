@@ -31,10 +31,10 @@
         <h4 class="artisans-menu-title">Reports</h4>
         <ul class="artisans-menu-list">
             <li>
-                <a href="/reports/work" class="active">Work</a>
+                <a href="/reports/work">Work</a>
             </li>
             <li>
-                <a href="/reports/rating">Rating</a>
+                <a href="/reports/rating" class="active">Rating</a>
             </li>
 
         </ul>
@@ -49,7 +49,7 @@
                 </div>
                 <form class="artisans-form" ng-init="getAll()">
                     <div class="artisans-form-header">
-                        <h4>Work</h4>
+                        <h4>Artisan Ratings</h4>
                     </div>
                     <div class="artisans-form-body">
                         <table class="u-full-width">
@@ -57,20 +57,16 @@
                                 <tr>
                                     <th>Name</th>
                                     <th>Surname</th>
-                                    <th>Address</th>
-                                    <th>Owner</th>
+                                    <th>Specialisation</th>
                                     <th>Rating</th>
-                                    <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat="work in works | filter: search">
-                                    <td>{{work.name}}</td>
-                                    <td>{{work.surname}}</td>
-                                    <td>{{work.location}}</td>
-                                    <td>{{work.owner}}</td>
+                                <tr ng-repeat="artisan in artisans | filter: search">
+                                    <td>{{artisan.name}}</td>
+                                    <td>{{artisan.surname}}</td>
+                                    <td>{{artisan.specialisation}}</td>
                                     <td style="text-align: center;"><i>n/a</i></td>
-                                    <td>Pending</td>
                                 </tr>
                             </tbody>
                         </table>
