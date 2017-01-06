@@ -40,8 +40,6 @@ module.exports = function (app) {
                     });
                 }
             });
-
-            res.json(success);
         }, function (error) {
             res.json(error);
         });
