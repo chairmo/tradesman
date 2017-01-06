@@ -1,7 +1,7 @@
 var CRUD = require('../utils/crud');
 var Artisan = require('../models/artisan');
 
-module.exports = function(app, io) {
+module.exports = function(app) {
 
     /**
      * Create new Artisan

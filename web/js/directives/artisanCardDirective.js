@@ -19,6 +19,7 @@ angular.module('Artisans').directive('artisanCard', function ($templateCache, $c
                                 '<br />' +
                                 '<strong>Cell: </strong>{{artisanList[' + current +'].cell}}<br />' +
                                 '<strong>Email: </strong>{{artisanList[' + current +'].email}}' +
+                                '<a style="display:block;margin: 15px;" href="/work/{{artisanList[' + current +']._id}}" class="button button-primary">Book</strong>' +
                             '</p>' +
                         '</a>' +
                         '<div class="artisans-controls">' +

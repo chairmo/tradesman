@@ -1,0 +1,44 @@
+﻿<header class="artisans-header" ng-init="getAll()">
+    <div class="artisans-header-brand">
+        <a href="/artisans">
+            <img class="artisans-logo" src="/img/logo.png" />
+        </a>
+    </div>
+    <nav class="artisans-navigation">
+        <ul class="artisans-menu-left">
+            <li>
+                <a href="/artisans">Artisans</a>
+            </li>
+        </ul>
+        <ul class="artisans-menu-right">
+            <li>
+                <a href="#">Messages</a>
+            </li>
+            <li>
+                <a href="settings/profile">
+                    <img src="https://scontent-ams3-1.xx.fbcdn.net/v/t1.0-9/13118990_10208602647238138_2898330164395268429_n.jpg?oh=73cd7e4bf5a1965deef3580c1dd1d234&oe=58623DCB"
+                        width="40" />
+                    <span>MaziMuhlari</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="artisans-main-content">
+    <div style="margin-top:70px;">
+        <div class="container">
+            <div class="row">
+                <div class="nine columns">
+                    <input type="search" class="u-full-width" placeholder="search for an artisan by typing here..." ng-model="search" ng-change="filterArtisans()"
+                    />
+                </div>
+                <div class="three columns">
+                    <a href="/artisan/create" class="button button-primary u-full-width">Create Artisan</a>
+                </div>
+            </div>
+
+            <artisan-card artisan-list="filteredTeachers"></artisan-card>
+
+        </div>
+    </div>
+</div>

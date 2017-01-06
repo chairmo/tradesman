@@ -1,7 +1,7 @@
 var CRUD = require('../utils/crud');
 var User = require('../models/user');
 
-module.exports = function (app, io) {
+module.exports = function (app) {
 
     /**
      * Create new User

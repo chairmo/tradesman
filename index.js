@@ -36,6 +36,7 @@ app.use(express.static(__dirname + '/web'));
 
 // Configure Routes / API ==================================================
 require('./cloud/controllers/artisan')(app);
+require('./cloud/controllers/work')(app);
 require('./cloud/controllers/user')(app);
 require('./cloud/controllers/routes')(app);
 
