@@ -14,9 +14,12 @@ module.exports = function (app) {
      */
     app.post('/api/work', function (req, res) {
 
+        var ref = Math.floor((Math.random() * 10000) + 1);;
+
         // Object to be persisted to the database
         var createObject = {
             artisan: req.body.artisan,
+            ref: ref,
             name: req.body.name,
             surname: req.body.surname,
             location: req.body.location,
@@ -26,7 +29,7 @@ module.exports = function (app) {
 
         CRUD().create(Work, createObject, function (success) {
             client.messages.create({
-                body: 'Congratulations ' + req.body.name + ' ' + req.body.surname + ' you have scheduled a job with [artisan name]. Your reference number is #000000. Please use this to rate the work when it is done by sending it to 0823592858.',
+                body: 'Congratulations ' + req.body.name + ' ' + req.body.surname + ' you have scheduled a job with artisan:' + req.body.artisan + '. Your reference number is #' + ref + '. Please use this to rate the work when it is done by sending it to 0823592858.',
                 to: req.body.cell,
                 from: '+12565307141'
             }, function (err, message) {

@@ -2,8 +2,24 @@ angular.module('Artisans').controller('WorkController', [
     '$scope', '$filter', '$routeParams', 'WorkService',
     function ($scope, $filter, $routeParams, WorkService) {
 
+        $("#to").intlTelInput({
+            initialCountry: "auto",
+            geoIpLookup: function (callback) {
+                $.get('http://ipinfo.io', function () { }, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    callback(countryCode);
+                });
+            },
+            utilsScript: "../../libs/intl-tel-input/build/js/utils.js"
+        });
+
+        $("#to").on("countrychange", function (e, countryData) {
+            var intlNumber = $("#to").intlTelInput("getNumber");
+        });
+
         $scope.createWork = function () {
             $scope.work.artisan = $routeParams.workId;
+            $scope.work.cell = $("#to").intlTelInput("getNumber");
             WorkService.create($scope.work)
                 .then(function (response) {
                     alert("successfully created Work :)");
