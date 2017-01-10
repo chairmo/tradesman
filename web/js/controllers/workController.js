@@ -1,6 +1,6 @@
 angular.module('Artisans').controller('WorkController', [
-    '$scope', '$filter', '$routeParams', 'WorkService',
-    function ($scope, $filter, $routeParams, WorkService) {
+    '$scope', '$filter', '$routeParams', 'WorkService', 'ArtisanService',
+    function ($scope, $filter, $routeParams, WorkService, ArtisanService) {
 
         $("#to").intlTelInput({
             initialCountry: "auto",
@@ -18,7 +18,7 @@ angular.module('Artisans').controller('WorkController', [
         });
 
         $scope.createWork = function () {
-            $scope.work.artisan = $routeParams.workId;
+            $scope.work.artisan = $routeParams.artisanId;
             $scope.work.cell = $("#to").intlTelInput("getNumber");
             WorkService.create($scope.work)
                 .then(function (response) {
@@ -41,7 +41,7 @@ angular.module('Artisans').controller('WorkController', [
         };
 
         $scope.getWorkById = function () {
-            WorkService.getById($routeParams.workId)
+            WorkService.getById($routeParams.artisanId)
                 .then(function (response) {
                     $scope.work = response.data;
                 }, function (data) {
@@ -50,11 +50,20 @@ angular.module('Artisans').controller('WorkController', [
         };
 
         $scope.updateWork = function () {
-            WorkService.updateById($routeParams.workId, $scope.work)
+            WorkService.updateById($routeParams.artisanId, $scope.work)
                 .then(function (response) {
                     alert("Successfully updated Work");
                 }, function (data) {
                     alert("Failed to Update Work");
+                });
+        };
+
+        $scope.getArtisanById = function () {
+            ArtisanService.getById($routeParams.artisanId)
+                .then(function (response) {
+                    $scope.artisan = response.data;
+                }, function (data) {
+                    alert("Failed to find Artisan");
                 });
         };
 

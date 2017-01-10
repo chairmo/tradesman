@@ -57,7 +57,7 @@ Artisans.config(function ($routeProvider, $locationProvider, $httpProvider) {
             controller: 'ReportsController',
             access: { restricted: false }
         })
-        .when('/work/:workId', {
+        .when('/work/:artisanId', {
             templateUrl: 'views/work-create.html',
             controller: 'WorkController',
             access: { restricted: false }
