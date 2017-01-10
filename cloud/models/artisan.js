@@ -10,6 +10,8 @@ module.exports = mongoose.model('Artisan', new mongoose.Schema({
     specialisation: { type: String, default: '' },
     experience: { type: Number, default: 0 },
     capacity: { type: Number, default: 0 },
+    tools: { type: String, default: '' },
+    transport: { type: String, default: '' },
     skill: { type: String, default: '' },
     created_on: { type: Date, default: Date.now }
 }));

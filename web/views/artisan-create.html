@@ -19,8 +19,7 @@
             </li>
             <li>
                 <a href="settings/profile">
-                    <img src="http://digventures.com/flag-fen/wp-content/uploads/placeholder-man-grid-240x268.png"
-                        width="40" />
+                    <img src="http://digventures.com/flag-fen/wp-content/uploads/placeholder-man-grid-240x268.png" width="40" />
                     <span>Anonymous</span>
                 </a>
             </li>
@@ -29,67 +28,91 @@
 </header>
 <div class="artisans-main-content">
     <div style="margin-top:70px;">
-        <div class="container">
-            <form class="artisans-form" ng-submit="createArtisan()">
-                <div class="artisans-form-header">
-                    <h4>Create Artisan</h4>
+<div class="container">
+    <form class="artisans-form" ng-submit="createArtisan()">
+        <div class="artisans-form-header">
+            <h4>Create Artisan</h4>
+        </div>
+        <div class="artisans-form-body">
+            <div class="row">
+                <div class="three columns">
+                    <img src="http://digventures.com/flag-fen/wp-content/uploads/placeholder-man-grid-240x268.png" width="90%" />
                 </div>
-                <div class="artisans-form-body">
+                <div class="nine columns">
                     <div class="row">
-                        <div class="six columns">
+                        <div class="twelve columns">
                             <label>Name</label>
                             <input class="u-full-width" type="text" placeholder="Name" ng-model="artisan.name" required />
                         </div>
-                        <div class="six columns">
+                        <div class="twelve columns">
                             <label>Surname</label>
                             <input class="u-full-width" type="text" placeholder="Surname" ng-model="artisan.surname" required />
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="six columns">
-                            <label>Company</label>
-                            <input class="u-full-width" type="text" placeholder="Company" ng-model="artisan.company" required />
-                        </div>
-                        <div class="six columns">
-                            <label>Location</label>
-                            <input class="u-full-width" type="text" placeholder="Location" ng-model="artisan.location" required />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="six columns">
-                            <label>Cell</label>
-                            <input class="u-full-width" type="tel" placeholder="Cell" ng-model="artisan.cell" required />
-                        </div>
-                        <div class="six columns">
-                            <label>Email</label>
-                            <input class="u-full-width" type="email" placeholder="Email" ng-model="artisan.email" required />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="six columns">
-                            <label>Experience (Years)</label>
-                            <input class="u-full-width" type="number" placeholder="Experience" ng-model="artisan.experience" min="0" required />
-                        </div>
-                        <div class="six columns">
-                            <label>Capacity (Workers)</label>
-                            <input class="u-full-width" type="number" placeholder="Capacity" ng-model="artisan.capacity" min="0" required />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="six columns">
-                            <label>Specialisation</label>
-                            <input class="u-full-width" type="text" placeholder="e.g. Plumber, Electrician, etc." ng-model="artisan.specialisation" required />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="twelve columns">
-                            <label>Skill</label>
-                            <textarea class="u-full-width" rows="5" placeholder="Describe your skills" ng-model="artisan.skill" required></textarea>
-                        </div>
-                    </div>
-                    <input class="button-primary" type="submit" value="Submit">
                 </div>
-            </form>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Company</label>
+                    <input class="u-full-width" type="text" placeholder="Company" ng-model="artisan.company" required />
+                </div>
+                <div class="six columns">
+                    <label>Location</label>
+                    <input class="u-full-width" type="text" placeholder="Location" ng-model="artisan.location" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Cell</label>
+                    <input class="u-full-width" type="tel" placeholder="Cell" ng-model="artisan.cell" required />
+                </div>
+                <div class="six columns">
+                    <label>Email</label>
+                    <input class="u-full-width" type="email" placeholder="Email" ng-model="artisan.email" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Experience (Years)</label>
+                    <input class="u-full-width" type="number" placeholder="Experience" ng-model="artisan.experience" min="0" required />
+                </div>
+                <div class="six columns">
+                    <label>Capacity (Workers)</label>
+                    <input class="u-full-width" type="number" placeholder="Capacity" ng-model="artisan.capacity" min="0" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Does the Tradesmen have their own tools?</label>
+                    <select class="u-full-width" ng-model="artisan.tools" required="required">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div class="six columns">
+                    <label>Does the Tradesmen have their own transport?</label>
+                    <select class="u-full-width" ng-model="artisan.transport" required="required">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label>Specialisation</label>
+                    <input class="u-full-width" type="text" placeholder="e.g. Plumber, Electrician, etc." ng-model="artisan.specialisation" required
+                    />
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <label>Skill</label>
+                    <textarea class="u-full-width" rows="5" placeholder="Describe your skills" ng-model="artisan.skill" required></textarea>
+                </div>
+            </div>
+            <input class="button-primary" type="submit" value="Submit">
         </div>
-    </div>
+    </form>
+</div>
+</div>
 </div>
